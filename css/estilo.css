@@ -10,14 +10,19 @@
 html {
 
 }
+header {
+  position: relative;
+}
 
 .header-wrapper {
   background-image: url("/img/neo.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
   margin: 0 auto;
   height: 513px;
+  height: 549px;
 }
 
 
@@ -29,7 +34,8 @@ html {
   width: 100%;
   height: 198px;
   background: linear-gradient(180deg, #191919 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 101.98%);
-  /* background-color: black; */
+
+
 }
 
 .wrapper-hero {
@@ -40,6 +46,7 @@ html {
 }
 .header{
   padding-block-start: 24px;
+  margin-block-end: 320px;
 }
 nav {
   width: 235px;
@@ -66,4 +73,57 @@ nav ul {
     color: gray;
   }
 
+  .wrapper-matrix {
+
+    width: 312px;
+    height: 146px;
+    margin: auto;
+  }
+
+  .categoria-matrix {
+    margin-block-end: 11px;
+  }
+  .categoria-matrix ul {
+    /* list-style: none; */
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    color: beige;
+
+
+  }
+  .categoria-matrix ul li:first-of-type {
+    list-style: none;
+
+  }
+
+  .categoria-matrix ul li {
+    margin-inline: 11px;
+  }
+
+  .categoria-matrix ul a {
+    font-family: Verdana;
+    font-size: 10px;
+    color: beige;
+
+    text-decoration: none;
+  }
+
+  .botones-matrix {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .gradiente-matrix {
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(180deg, #191919 -99.29%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 101.98%);
+    transform: rotate(-180deg);
+  }
 }
