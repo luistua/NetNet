@@ -7,11 +7,10 @@
 *{
   margin: 0;
 }
-html {
 
-}
 header {
   position: relative;
+  margin-block-end: 48px;
 }
 
 .header-wrapper {
@@ -125,5 +124,43 @@ nav ul {
     height: 70px;
     background: linear-gradient(180deg, #191919 -99.29%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 101.98%);
     transform: rotate(-180deg);
+  }
+
+  body {
+    background-color: black;
+  }
+
+  h2 {
+    color: blanchedalmond;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+  }
+
+  .sections {
+    margin-inline-start: 16px;
+    margin-block-end: 16px;
+    width: 329px;
+    height: 176px;
+  }
+
+  .sections h2 {
+  margin-block-end: 8px;
+  }
+
+  .flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+  }
+  .box {
+    width: 96px;
+    height: 114px;
+    margin-inline: 8px;
+    flex-shrink: 1;
+  }
+
+  .box:first-of-type {
+    margin-inline-start: 0;
   }
 }
