@@ -11,17 +11,19 @@
 header {
   position: relative;
   margin-block-end: 48px;
+
 }
 
 .header-wrapper {
   background-image: url("/img/neo.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
   margin: 0 auto;
   height: 513px;
-  height: 549px;
+  /* height: 549px; */
+  overflow: hidden;
 }
 
 
@@ -81,6 +83,8 @@ nav ul {
 
   .categoria-matrix {
     margin-block-end: 11px;
+    position: relative;
+    z-index: 1;
   }
   .categoria-matrix ul {
     /* list-style: none; */
@@ -88,16 +92,30 @@ nav ul {
     padding: 0;
     justify-content: center;
     color: beige;
-
-
-  }
-  .categoria-matrix ul li:first-of-type {
     list-style: none;
 
+
   }
 
+
   .categoria-matrix ul li {
-    margin-inline: 11px;
+    display: flex;
+    align-items: center;
+    margin-inline: 4px;
+  }
+
+  .categoria-matrix ul li::before {
+    color: aliceblue;
+    content: '•';
+    align-items: center;
+    position: relative;
+    top: 2px;
+    margin-inline-end: 5px;
+
+
+  }
+  .categoria-matrix ul li:first-child::before {
+    display:none;
   }
 
   .categoria-matrix ul a {
@@ -148,15 +166,15 @@ nav ul {
   }
 
   .flexbox {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: auto;
 
   }
   .box {
+    display: inline-block;
     width: 96px;
     height: 114px;
-    margin-inline: 8px;
+    margin-inline: 2px;
     flex-shrink: 1;
   }
 
