@@ -26,4 +26,92 @@
   font-style: italic;
   font-weight: bold;
 }
+body {
+  margin: 0;
+  border: 1px solid red;
+  min-width: 360px;
+}
 
+  .header{
+    background-color: black;
+    border: 1px solid yellow;
+    width: 100%;
+  }
+
+  .content-logo {
+    margin-inline-start: 13px;
+    margin-block-start: 13px;
+    margin-block-end: 25px;
+  }
+
+  .header-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    grid-auto-columns: 100px;
+    justify-content: space-evenly;
+
+
+  }
+
+  .header-item {
+    list-style: none;
+
+  }
+
+  .header-link {
+    color: white;
+    font-family: Avenir;
+    font-size: 0.9em;
+    text-decoration: none;
+  }
+
+  .content-neo {
+    width: 100%;
+    object-fit: contain;
+    min-width: 360px;
+    max-width: 1633 px;
+  }
+
+  .content-peli-logo {
+    width: 70%;
+    min-width: 360px;
+    margin: auto;
+    object-fit: contain;
+  }
+
+.header-tags {
+  width: 100%;
+}
+
+.header-tags ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  grid-auto-columns: 100px;
+  justify-content: center;
+}
+
+.header-tags ul li {
+  list-style: none;
+}
+
+.header-tags ul li a{
+  font-family: Avenir;
+  font-size: 0.7em;
+  color: white;
+  text-decoration: none;
+}
+
+.header-tags ul li::before{
+  content: '•';
+  margin-inline-start: 6px;
+  margin-inline-end: 3px;
+  color: white;
+  position: relative;
+  top: 2px;
+}
+
+.header-tags ul li:first-child::before{
+  content: '';
+}
