@@ -37,7 +37,6 @@ body {
     background-color: black;
     border: 1px solid yellow;
     width: 100%;
-
   }
 
   .content-logo {
@@ -128,6 +127,7 @@ body {
     /* margin: auto; */
     object-fit: contain;
     text-align: center;
+    overflow: hidden;
   }
 
 
@@ -210,4 +210,30 @@ body {
   margin: 0;
 }
 
+main {
+display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
+.list {
+  margin-block-start: 66px;
+  margin-inline-start: 11px;
+}
+
+h2 {
+  color: white;
+  font-family: Avenir;
+  font-size: 18px;
+}
+
+.list-content {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.list-item {
+  margin: 3px;
+}
